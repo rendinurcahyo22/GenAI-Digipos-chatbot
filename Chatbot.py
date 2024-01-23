@@ -63,7 +63,7 @@ def open_app(app_name):
 ##################################################################################################
 # Function LLM GenAI Studio
 def initialize_chat_bot():
-    vertexai.init(project="mii-telkomsel-genai", location="asia-southeast1")
+    vertexai.init(project="mii-telkomsel-genai-poc", location="asia-southeast1")
     chat_model = ChatModel.from_pretrained("chat-bison")
     chat = chat_model.start_chat(
       context="""You are Digipos, a Virtual AI Assistant dedicated to providing accurate information. 
@@ -91,13 +91,13 @@ def initialize_parameter_bot(grounding_use_web = False):
     if grounding_use_web:
         grounding_value = GroundingSource.WebSearch()
     else:
-        grounding_value = GroundingSource.VertexAISearch(data_store_id="tsel-digipos_1706004625656", location="global", project="mii-telkomsel-genai")
+        grounding_value = GroundingSource.VertexAISearch(data_store_id="tsel-digipos_1701747401655", location="global", project="mii-telkomsel-genai-poc")
 
     parameters = {
       "candidate_count": 1,
       "grounding_source": grounding_value,
       "max_output_tokens": 1024,
-      "temperature": 0.9,
+      "temperature": 0.2,
       "top_p": 1
       }
 
