@@ -16,8 +16,8 @@ gitdb==4.0.10
 GitPython==3.1.32
 google-api-core==2.11.1
 google-auth==2.22.0
-google-cloud-aiplatform==1.30.0
-google-cloud-bigquery==3.11.4
+google-cloud-aiplatform
+google-cloud-bigquery
 google-cloud-core==2.3.3
 google-cloud-resource-manager==1.10.3
 google-cloud-storage==2.10.0
