@@ -1,5 +1,4 @@
 import streamlit as st
-import functions_framework
 import vertexai
 from vertexai.language_models import ChatModel, InputOutputTextPair, GroundingSource, ChatMessage, ChatSession
 from google.cloud import bigquery
