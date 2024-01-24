@@ -75,8 +75,8 @@ def initialize_chat_bot():
       Add some opening text before answering the context question, don't straight to the point.
       Do not answer only the summary taken from the knowledge, but add the prefix, post, and etc so it\'ll sound more human.
       Don't mention 'unstructured knowledge base' or file names during the conversation.
-      Don't answer from your knowledge, answer only from the information provided.
-      If an answer is not provided in the information, acknowledge your inability to answer and tell them you are unable to respond."""
+      Don't answer from your knowledge or internet, answer only from the information provided in knowledge base.
+      If an answer is not provided in the knowledge base, acknowledge your inability to answer and tell them you are unable to respond."""
     )
     return chat
 
