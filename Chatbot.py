@@ -91,7 +91,7 @@ def initialize_parameter_bot(grounding_use_web = False):
     if grounding_use_web:
         grounding_value = GroundingSource.WebSearch()
     else:
-        grounding_value = GroundingSource.VertexAISearch(data_store_id="tsel-digipos_1701747401655", location="global", project="mii-telkomsel-genai-poc")
+        grounding_value = GroundingSource.VertexAISearch(data_store_id="digipos_new_1706054209942", location="global", project="mii-telkomsel-genai-poc")
 
     parameters = {
       "candidate_count": 1,
